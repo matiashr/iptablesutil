@@ -84,11 +84,7 @@ case "$1" in
 	# posible to delete a rule using iptables -D INPUT [N]
 	;;
   remove)
-	  # TODO:
-	  # removes entry by id, but should only remove the entries that was
-	  # added
-	 # iptables -t nat -D PREROUTING $2
-	 # iptables -t nat -D POSTROUTING $2
+	# remove all NAT setup
 	 iptables --table nat --flush
 	;;
 	*)
